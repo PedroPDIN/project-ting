@@ -19,7 +19,9 @@ def remove(instance):
         return sys.stdout.write("Não há elementos\n")
 
     current_file = instance.dequeue()
-    return sys.stdout.write(str(f"Arquivo {current_file} removido com sucesso\n"))
+    return sys.stdout.write(str(
+      f"Arquivo {current_file} removido com sucesso\n"
+    ))
 
 
 def file_metadata(instance, position):
