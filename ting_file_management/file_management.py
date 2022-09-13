@@ -12,10 +12,8 @@ def txt_importer(path_file):
 
         with open(path_file) as file:
             lines = file.readlines()
-
             for line in lines:
                 current_values.append(line.strip("\n"))
-
         return current_values
     except FileNotFoundError:
         return sys.stderr.write(f"Arquivo {path_file} não encontrado\n")
