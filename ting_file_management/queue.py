@@ -1,6 +1,6 @@
 class Queue:
     def __init__(self):
-      self._data = []
+        self._data = []
 
     def __len__(self):
         return len(self._data)
@@ -15,5 +15,5 @@ class Queue:
 
     def search(self, index):
         if index in range(self.__len__()):
-          return self._data[index]
+            return self._data[index]
         raise IndexError
